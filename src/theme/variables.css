@@ -1,0 +1,265 @@
+/* ─── Stockly Design System ─────────────────────────────────────────────── */
+/* Inspirado en Linear / Stripe / Vercel: minimalismo + precisión           */
+
+:root {
+  /* ─── Brand ─────────────────────────────────────────────────────────── */
+  --brand-50:  #f5f3ff;
+  --brand-100: #ede9fe;
+  --brand-200: #ddd6fe;
+  --brand-300: #c4b5fd;
+  --brand-400: #a78bfa;
+  --brand-500: #5b21b6;   /* PRINCIPAL */
+  --brand-600: #4c1d95;
+  --brand-700: #3b0764;
+  --brand-800: #2e1065;
+  --brand-900: #1e1b4b;
+
+  /* ─── Semantic ──────────────────────────────────────────────────────── */
+  --success:   #10b981;
+  --warning:   #f59e0b;
+  --danger:    #ef4444;
+  --critical:  #dc2626;
+  --info:      #3b82f6;
+
+  /* ─── Neutrals (Slate) ──────────────────────────────────────────────── */
+  --gray-50:   #f8fafc;
+  --gray-100:  #f1f5f9;
+  --gray-200:  #e2e8f0;
+  --gray-300:  #cbd5e1;
+  --gray-400:  #94a3b8;
+  --gray-500:  #64748b;
+  --gray-600:  #475569;
+  --gray-700:  #334155;
+  --gray-800:  #1e293b;
+  --gray-900:  #0f172a;
+  --gray-950:  #020617;
+
+  /* ─── Surfaces (light theme) ────────────────────────────────────────── */
+  --bg:         var(--gray-50);
+  --surface:    #ffffff;
+  --surface-2:  var(--gray-100);
+  --surface-3:  var(--gray-200);
+  --border:     var(--gray-200);
+  --border-strong: var(--gray-300);
+
+  /* ─── Text ──────────────────────────────────────────────────────────── */
+  --text:       var(--gray-900);
+  --text-2:     var(--gray-600);
+  --text-3:     var(--gray-400);
+  --text-on-brand: #ffffff;
+
+  /* ─── Niveles de alerta (escalado Salesforce) ───────────────────────── */
+  --level-ok-bg:       #ecfdf5;
+  --level-ok-fg:       #047857;
+  --level-ok-border:   #a7f3d0;
+
+  --level-aviso-bg:    #fef3c7;
+  --level-aviso-fg:    #92400e;
+  --level-aviso-border: #fcd34d;
+
+  --level-urgente-bg:  #ffedd5;
+  --level-urgente-fg:  #9a3412;
+  --level-urgente-border: #fdba74;
+
+  --level-critico-bg:  #fce7f3;
+  --level-critico-fg:  #9d174d;
+  --level-critico-border: #f9a8d4;
+
+  --level-vencido-bg:  #fee2e2;
+  --level-vencido-fg:  #991b1b;
+  --level-vencido-border: #fca5a5;
+
+  /* ─── Spacing scale ─────────────────────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ─── Radius ────────────────────────────────────────────────────────── */
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ─── Shadows ───────────────────────────────────────────────────────── */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 8px -2px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 4px 8px -4px rgba(15, 23, 42, 0.06);
+  --shadow-xl: 0 24px 48px -8px rgba(15, 23, 42, 0.16);
+  --shadow-brand: 0 8px 24px -8px rgba(124, 58, 237, 0.4);
+
+  /* ─── Typography ────────────────────────────────────────────────────── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Consolas, monospace;
+
+  --text-xs:   11px;
+  --text-sm:   13px;
+  --text-base: 15px;
+  --text-lg:   17px;
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  30px;
+  --text-4xl:  36px;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extra: 800;
+
+  /* ─── Transitions ───────────────────────────────────────────────────── */
+  --t-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-med:  200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-slow: 320ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ─── Ionic overrides ───────────────────────────────────────────────── */
+  --ion-font-family: var(--font-sans);
+  --ion-background-color: var(--bg);
+  --ion-text-color: var(--text);
+}
+
+/* ─── Dark theme ──────────────────────────────────────────────────────── */
+body.dark {
+  --bg:         var(--gray-950);
+  --surface:    var(--gray-900);
+  --surface-2:  var(--gray-800);
+  --surface-3:  var(--gray-700);
+  --border:     var(--gray-800);
+  --border-strong: var(--gray-700);
+
+  --text:       var(--gray-50);
+  --text-2:     var(--gray-400);
+  --text-3:     var(--gray-500);
+
+  --level-ok-bg:       rgba(16, 185, 129, 0.12);
+  --level-ok-fg:       #6ee7b7;
+  --level-ok-border:   rgba(16, 185, 129, 0.3);
+
+  --level-aviso-bg:    rgba(245, 158, 11, 0.12);
+  --level-aviso-fg:    #fcd34d;
+  --level-aviso-border: rgba(245, 158, 11, 0.3);
+
+  --level-urgente-bg:  rgba(249, 115, 22, 0.12);
+  --level-urgente-fg:  #fdba74;
+  --level-urgente-border: rgba(249, 115, 22, 0.3);
+
+  --level-critico-bg:  rgba(236, 72, 153, 0.12);
+  --level-critico-fg:  #f9a8d4;
+  --level-critico-border: rgba(236, 72, 153, 0.3);
+
+  --level-vencido-bg:  rgba(239, 68, 68, 0.12);
+  --level-vencido-fg:  #fca5a5;
+  --level-vencido-border: rgba(239, 68, 68, 0.3);
+
+  --ion-background-color: var(--bg);
+  --ion-text-color: var(--text);
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────── */
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+}
+
+button {
+  font-family: inherit;
+  letter-spacing: -0.011em;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* ─── Animaciones reutilizables ──────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Utility classes mínimas ────────────────────────────────────────── */
+.animate-fade-in   { animation: fadeIn var(--t-med) ease-out; }
+.animate-slide-up  { animation: slideUp var(--t-med) ease-out; }
+.animate-scale-in  { animation: scaleIn var(--t-med) ease-out; }
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 0%,
+    var(--surface-3) 50%,
+    var(--surface-2) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius);
+}
+
+/* Scrollbar oculto pero funcional */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: var(--radius-full);
+}
+body.dark ::-webkit-scrollbar-thumb { background: var(--gray-700); }
+
+/* ─── Safe area Android/iOS ─────────────────────────────────────────────── */
+/* Con StatusBar.setOverlaysWebView({ overlay: false }) la barra nativa ya   */
+/* ocupa su espacio. Esta regla cubre el caso del notch/safe-area en iOS y   */
+/* navegadores, sin duplicar margen en Android.                              */
+ion-content {
+  --padding-bottom: env(safe-area-inset-bottom);
+}
